@@ -1,0 +1,21 @@
+.footer {
+  background: #353535;
+  color: #DEDEDE;
+  padding: 20px;
+  &__title {
+    font-family: "Shrikhand", cursive;
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+  &__links {
+    margin: 10px 0;
+
+  }
+  &__link i {
+    width: 26px;
+    font-size: 14px;
+  }
+  &__link:hover {
+    text-decoration: underline;
+  }
+}
