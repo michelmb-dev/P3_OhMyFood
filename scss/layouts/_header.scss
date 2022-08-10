@@ -1,0 +1,26 @@
+.header {
+  position: relative;
+  text-align: center;
+  &__title {
+    font-family: "Shrikhand", cursive;
+    font-size: 28px;
+    margin: 0;
+    padding: 20px 0 10px;
+    box-shadow: 0 3px 3px $color-grey;
+  }
+  &__location {
+    display: inline-block;
+    background: $color-grey;
+    padding: 15px;
+    width: 100%;
+    font-weight: 700;
+  }
+  &__location i {
+    margin-right: 8px;
+  }
+  &__link {
+    position: absolute;
+    top: 26px;
+    left: 22px;
+  }
+}

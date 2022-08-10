@@ -4,7 +4,7 @@
   "description": "Projet 3 OhMyFood OCR",
   "main": "index.js",
   "scripts": {
-    "sass": "sass -w scss/main.scss:public/css/style.css"
+    "sass": "sass -w scss/main.scss:public/css/style.css --no-source-map"
   },
   "author": "",
   "license": "ISC",
