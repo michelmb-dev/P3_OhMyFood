@@ -1,0 +1,141 @@
+.landing {
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  text-align: center;
+
+  &__title {
+    padding: 0 40px;
+  }
+
+  &__text {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+
+  &__btn {
+    background: linear-gradient(to top, $color-primary , $color-secondary 100%);
+    color: #FFF;
+    font-weight: 700;
+    padding: 0 20px;
+    border: none;
+    border-radius: 26px;
+    height: 52px;
+    box-shadow: 0 5px 15px $color-grey;
+  }
+}
+
+.functioning {
+  margin: 60px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+
+  &__title {
+    width: 100%;
+  }
+
+  &__btn {
+    position: relative;
+    text-align: start;
+    background: #FFF;
+    font-weight: 700;
+    border: none;
+    border-radius: 20px;
+    height: 72px;
+    width: 95%;
+    max-width: 360px;
+    box-shadow: 0 8px 10px $color-grey-light;
+    z-index: 0;
+
+    &__number {
+      position: relative;
+      color: #FFF;
+      font-size: 14px;
+      left: -2px;
+
+      &::before {
+        position: absolute;
+        top: calc(50% - 13px);
+        left: calc(50% - 12px);
+        content: "";
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background: $color-primary;
+        z-index: -1;
+      }
+    }
+
+    &__icon {
+      margin: 0 25px;
+      font-size: 18px;
+      color: $color-grey;
+    }
+
+    &:hover {
+      background-color: lighten($color-secondary, 22%);
+      .functioning__btn__icon {
+        color: $color-primary;
+      }
+    }
+  }
+}
+
+.restaurants {
+  margin: 120px 0 60px;
+
+  &__wrapper {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__card {
+    display: block;
+    position: relative;
+    box-shadow: 0 8px 10px $color-grey-light;
+    border-radius: 15px;
+    overflow: hidden;
+
+    &__new {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background: $color-tertiary;
+      font-size: 14px;
+      font-weight: 500;
+      color: lighten($color-grey-dark, 40%);
+      border-radius: 2px;
+      padding: 6px 12px;
+    }
+
+    & img {
+      object-fit: cover;
+      object-position: center 62%;
+      max-height: 180px;
+    }
+
+    &__footer {
+      background: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px;
+      flex-grow: 1;
+      z-index: 0;
+
+      & p {
+        font-weight: 300;
+        padding-top: 5px;
+      };
+    }
+  }
+
+}
