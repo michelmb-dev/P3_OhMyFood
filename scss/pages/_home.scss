@@ -1,3 +1,10 @@
+.wrapper {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+}
+
 .landing {
   padding: 40px 0;
   display: flex;
@@ -16,28 +23,22 @@
     font-weight: 300;
     margin-bottom: 10px;
   }
-
   &__btn {
-    background: linear-gradient(to top, $color-primary , $color-secondary 100%);
-    color: #FFF;
-    font-weight: 700;
-    padding: 0 20px;
-    border: none;
-    border-radius: 26px;
-    height: 52px;
-    box-shadow: 0 5px 15px $color-grey;
+    @include primary-btn(20px);
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 .functioning {
-  margin: 60px 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 25px;
+  margin: 60px 0;
 
   &__title {
-    width: 100%;
+    flex-basis: 100%;
   }
 
   &__btn {
@@ -47,11 +48,12 @@
     font-weight: 700;
     border: none;
     border-radius: 20px;
+    width: 100%;
     height: 72px;
-    width: 95%;
-    max-width: 360px;
     box-shadow: 0 8px 10px $color-grey-light;
     z-index: 0;
+    padding-right: 20px;
+    transition: background-color 350ms;
 
     &__number {
       position: relative;
@@ -76,6 +78,7 @@
       margin: 0 25px;
       font-size: 18px;
       color: $color-grey;
+      transition: color 350ms;
     }
 
     &:hover {
@@ -123,18 +126,18 @@
     }
 
     &__footer {
-      background: white;
       display: flex;
       align-items: center;
       justify-content: space-between;
       padding: 15px;
       flex-grow: 1;
-      z-index: 0;
-
       & p {
         font-weight: 300;
         padding-top: 5px;
       };
+      &__heart {
+        @include heart-link;
+      }
     }
   }
 

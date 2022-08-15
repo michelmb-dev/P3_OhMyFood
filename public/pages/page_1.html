@@ -20,16 +20,19 @@
 </head>
 <body>
     <header class="header">
-        <a href="page_1.html" class="header__link">
+        <a href="../index.html" class="header__link">
             <i class="fa-solid fa-arrow-left fa-xl"></i>
         </a>
         <h1 class="header__title">ohmyfood</h1>
-        <img class="cover" src="../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Restaurant À la française">
+        <img class="cover" src="../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Restaurant La palette du goût">
     </header>
     <main class="main">
         <div class="main__title">
-            <h1>À la française</h1>
-            <a href="#"><i class="fa-regular fa-heart fa-2x"></i></a>
+            <h1>La palette du goût</h1>
+            <a href="#" class="main__heart">
+                <img class="restaurants__card__footer__heart--stroke" src="../images/icons/heart.svg" alt="heart">
+                <img class="restaurants__card__footer__heart--fill" src="../images/icons/heart-fill.svg" alt="heart">
+            </a>
         </div>
         <div class="meals">
             <div class="meals__cards">
@@ -40,10 +43,10 @@
                     <div class="meals__card">
                         <div class="meals__card__body">
                             <h3 class="meals__card__body__title">
-                                Tartare de poulpe acidulé
+                                Fricassée d'escargot
                             </h3>
                             <div class="meals__card__body__text">
-                                <p>Aux zests d'orange</p>
+                                <p>Au piment d'Espelette</p>
                                 <span>25€</span>
                             </div>
                             <span class="meals__card__body__check"><i class="fa-solid fa-circle-check"></i></span>
@@ -52,10 +55,10 @@
                     <div class="meals__card">
                         <div class="meals__card__body">
                             <h3 class="meals__card__body__title">
-                                Velouté de légumes d'antan
+                                Foie gras de canard mi-cuit
                             </h3>
                             <div class="meals__card__body__text">
-                                <p>Carotte, panais, topinambour</p>
+                                <p>Et ses copeaux de truffe noire</p>
                                 <span>35€</span>
                             </div>
                             <span class="meals__card__body__check"><i class="fa-solid fa-circle-check"></i></span>
@@ -64,17 +67,16 @@
                     <div class="meals__card">
                         <div class="meals__card__body">
                             <h3 class="meals__card__body__title">
-                                Soupe à l'oignon
+                                Oeuf au plat
                             </h3>
                             <div class="meals__card__body__text">
-                                <p>Revisitée</p>
+                                <p>Assaisonné à la truffe sur lit de caviar</p>
                                 <span>20€</span>
                             </div>
                             <span class="meals__card__body__check"><i class="fa-solid fa-circle-check"></i></span>
                         </div>
                     </div>
                 </div>
-
             </div>
             <div class="meals__cards">
                 <h3 class="meals__cards__title">plats</h3>
@@ -82,10 +84,10 @@
                     <div class="meals__card">
                         <div class="meals__card__body">
                             <h3 class="meals__card__body__title">
-                                Coquilles Saint-Jacques
+                                Filet de boeuf aux herbes
                             </h3>
                             <div class="meals__card__body__text">
-                                <p>Accompagnées d'une purée de panais</p>
+                                <p>Accompagné de sa ribambelle de légumes</p>
                                 <span>40€</span>
                             </div>
                             <span class="meals__card__body__check"><i class="fa-solid fa-circle-check"></i></span>
@@ -94,10 +96,10 @@
                     <div class="meals__card">
                         <div class="meals__card__body">
                             <h3 class="meals__card__body__title">
-                                Magret de canard
+                                Parmentier de queue de boeuf
                             </h3>
                             <div class="meals__card__body__text">
-                                <p>Et parmentier de pommes de terre</p>
+                                <p>À la truffe noire sur sa purée de panais</p>
                                 <span>35€</span>
                             </div>
                             <span class="meals__card__body__check"><i class="fa-solid fa-circle-check"></i></span>
@@ -106,10 +108,10 @@
                     <div class="meals__card">
                         <div class="meals__card__body">
                             <h3 class="meals__card__body__title">
-                                Pigeonneau d’Ille-et-Vilaine
+                                Filet de turbot
                             </h3>
                             <div class="meals__card__body__text">
-                                <p>Sur son lit de gnocchis aux légumes</p>
+                                <p>Aux agrumes</p>
                                 <span>44€</span>
                             </div>
                             <span class="meals__card__body__check"><i class="fa-solid fa-circle-check"></i></span>
@@ -123,10 +125,10 @@
                     <div class="meals__card">
                         <div class="meals__card__body">
                             <h3 class="meals__card__body__title">
-                                Pétales de violettes glacés
+                                Paris-Brest
                             </h3>
                             <div class="meals__card__body__text">
-                                <p>Et purée de noisettes</p>
+                                <p>Revisité</p>
                                 <span>18€</span>
                             </div>
                             <span class="meals__card__body__check"><i class="fa-solid fa-circle-check"></i></span>
@@ -135,10 +137,10 @@
                     <div class="meals__card">
                         <div class="meals__card__body">
                             <h3 class="meals__card__body__title">
-                                Fondant au chocolat
+                                Macaron au chocolat d'exception
                             </h3>
                             <div class="meals__card__body__text">
-                                <p>Revisité</p>
+                                <p>Et glace à la vanille de Madagascar</p>
                                 <span>22€</span>
                             </div>
                             <span class="meals__card__body__check"><i class="fa-solid fa-circle-check"></i></span>
@@ -147,10 +149,10 @@
                     <div class="meals__card">
                         <div class="meals__card__body">
                             <h3 class="meals__card__body__title">
-                                Millefeuille croustillant
+                                Mousse au chocolat
                             </h3>
                             <div class="meals__card__body__text">
-                                <p>Myrtilles et pâte d’amande</p>
+                                <p>Au piment d'Espelette et à la truffe noire</p>
                                 <span>23€</span>
                             </div>
                             <span class="meals__card__body__check"><i class="fa-solid fa-circle-check"></i></span>
@@ -160,7 +162,6 @@
             </div>
         </div>
         <button class="main__btn">Commander</button>
-
     </main>
     <footer class="footer">
         <h2 class="footer__title">ohmyfood</h2>
