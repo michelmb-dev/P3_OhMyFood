@@ -2,11 +2,11 @@
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 15px;
 }
 
 .landing {
-  padding: 40px 0;
+  background: $color-bg;
+  padding: 50px 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -35,7 +35,7 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 25px;
-  margin: 60px 0;
+  padding: 50px 20px 70px;
 
   &__title {
     flex-basis: 100%;
@@ -91,7 +91,8 @@
 }
 
 .restaurants {
-  margin: 120px 0 60px;
+  background: $color-bg;
+  padding: 60px 20px 60px;
 
   &__wrapper {
     margin-top: 24px;

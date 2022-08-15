@@ -11,17 +11,19 @@
 
 @mixin heart-link {
   position: relative;
+  margin-right: 10px;
+
   &--stroke {
-    width: 30px;
-    height: 30px;
+    width: 28px;
+    height: 28px;
     opacity: 1;
     transition: opacity 250ms;
   }
   &--fill {
+    width: 30px;
+    height: 30px;
     top: -1px;
     right: -1px;
-    width: 32px;
-    height: 32px;
     position: absolute;
     opacity: 0;
     transition: opacity 250ms;
