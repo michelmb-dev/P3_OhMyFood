@@ -6,7 +6,11 @@
   border: none;
   border-radius: 26px;
   height: 52px;
-  box-shadow: 0 5px 15px $color-grey;
+  box-shadow: 0 5px 15px $color-grey-light;
+  transition: opacity 350ms;
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
 @mixin heart-link {

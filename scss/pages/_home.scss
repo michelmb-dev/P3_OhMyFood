@@ -5,7 +5,6 @@
 }
 
 .landing {
-  background: $color-bg;
   padding: 50px 15px;
   display: flex;
   flex-direction: column;
@@ -13,12 +12,9 @@
   align-items: center;
   gap: 18px;
   text-align: center;
-
-
   &__title {
     padding: 0 40px;
   }
-
   &__text {
     font-size: 18px;
     font-weight: 300;
@@ -37,8 +33,6 @@
   justify-content: center;
   gap: 25px;
   padding: 50px 20px 70px;
-
-
   &__title {
     flex-basis: 100%;
   }
@@ -56,9 +50,6 @@
     z-index: 0;
     padding-right: 10px;
     transition: background-color 350ms;
-    @include responsive-tablet {
-      flex-basis: 40%;
-    }
     @include responsive-desktop {
       flex: 1 1 30%;
     }
@@ -98,23 +89,22 @@
 }
 
 .restaurants {
-  background: $color-bg;
   padding: 60px 20px 60px;
-
   &__wrapper {
     margin-top: 24px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    @include responsive-tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
   &__card {
-    display: block;
     position: relative;
     box-shadow: 0 8px 10px $color-grey-light;
     border-radius: 15px;
     overflow: hidden;
-
     &__new {
       position: absolute;
       top: 15px;

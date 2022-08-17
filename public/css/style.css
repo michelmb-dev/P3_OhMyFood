@@ -94,7 +94,6 @@ button {
 }
 
 .landing {
-  background: rgb(246, 246, 246);
   padding: 50px 15px;
   display: flex;
   flex-direction: column;
@@ -119,9 +118,13 @@ button {
   border: none;
   border-radius: 26px;
   height: 52px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 15px rgba(3, 3, 3, 0.1);
+  transition: opacity 350ms;
   margin-left: auto;
   margin-right: auto;
+}
+.landing__btn:hover {
+  opacity: 0.8;
 }
 
 .functioning {
@@ -147,11 +150,6 @@ button {
   z-index: 0;
   padding-right: 10px;
   transition: background-color 350ms;
-}
-@media screen and (min-width: 768px) {
-  .functioning__btn {
-    flex-basis: 40%;
-  }
 }
 @media screen and (min-width: 992px) {
   .functioning__btn {
@@ -189,17 +187,20 @@ button {
 }
 
 .restaurants {
-  background: rgb(246, 246, 246);
   padding: 60px 20px 60px;
 }
 .restaurants__wrapper {
   margin-top: 24px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+@media screen and (min-width: 768px) {
+  .restaurants__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 .restaurants__card {
-  display: block;
   position: relative;
   box-shadow: 0 8px 10px rgba(3, 3, 3, 0.1);
   border-radius: 15px;
@@ -279,11 +280,15 @@ button {
   border: none;
   border-radius: 26px;
   height: 52px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 15px rgba(3, 3, 3, 0.1);
+  transition: opacity 350ms;
   display: flex;
   align-items: center;
   margin-top: 50px;
   margin-inline: auto;
+}
+.main__btn:hover {
+  opacity: 0.8;
 }
 .main__heart {
   position: relative;
