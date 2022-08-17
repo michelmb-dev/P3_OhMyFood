@@ -5,3 +5,8 @@ $color-bg: rgb(246, 246, 246);
 $color-grey: rgba(0, 0, 0, 0.1);
 $color-grey-dark: rgba(0, 0, 0, 1);
 $color-grey-light: lighten($color-grey, 1%);
+
+$breakpoints: (
+  tablet: 768px,
+  desktop: 992px
+)

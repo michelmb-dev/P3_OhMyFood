@@ -37,3 +37,15 @@
     }
   }
 }
+
+@mixin responsive-tablet {
+  @media screen and (min-width: map-get($breakpoints, tablet)) {
+    @content;
+  }
+}
+
+@mixin responsive-desktop {
+  @media screen and (min-width: map-get($breakpoints, desktop)) {
+    @content;
+  }
+}
