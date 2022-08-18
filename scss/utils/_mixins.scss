@@ -42,6 +42,12 @@
   }
 }
 
+@mixin responsive-mobile-small {
+  @media screen and (max-width: map-get($breakpoints, mobile-small)) {
+    @content;
+  }
+}
+
 @mixin responsive-tablet {
   @media screen and (min-width: map-get($breakpoints, tablet)) {
     @content;

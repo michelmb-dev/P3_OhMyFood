@@ -3,7 +3,7 @@
   border-radius: 40px 40px 0 0;
   padding-bottom: 15px;
   margin-top: 230px;
-  max-width: 768px;
+  box-shadow: 0 5px 5px 5px $color-grey-light;
   &__title {
     display: flex;
     justify-content: space-between;
@@ -17,6 +17,10 @@
     align-items: center;
     margin-top: 50px;
     margin-inline: auto;
+    @include responsive-desktop {
+      grid-column-start: 2 ;
+      margin-top: 25px;
+    }
   }
   &__heart {
     @include heart-link;
@@ -32,6 +36,11 @@
 
 .meals {
   margin: 0 15px 50px;
+  @include responsive-desktop {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
   &__cards {
     display: flex;
     flex-direction: column;
@@ -39,6 +48,7 @@
     width: 100%;
     gap: 15px;
     margin-bottom: 30px;
+    min-width: 30%;
     &__title {
       width: 100%;
       padding: 0 5px;
