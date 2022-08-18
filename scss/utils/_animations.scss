@@ -1,3 +1,27 @@
+/* Animate with delay all cards of meal */
+@for $i from 0 to 9 {
+  .animate-delay-#{$i} {
+    animation: 0.5s #{calc($i / 10)}s linear fade-menu both;
+  }
+}
+
+/* Fading and translate for cards of meal */
+@keyframes fade-menu {
+  0%{
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  25% {
+    opacity: 0.5;
+    transform: translateY(6px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Rotate check icon on cards of meal */
 @keyframes rotate-check {
   from {
     transform: rotate(90deg);

@@ -375,6 +375,8 @@ button {
   border-radius: 12px;
   cursor: pointer;
   overflow: hidden;
+  transform: translateY(10px);
+  opacity: 0;
 }
 .meals__card__body {
   padding: 12px;
@@ -438,6 +440,59 @@ button {
 }
 
 /* Animations */
+/* Animate with delay all cards of meal */
+.animate-delay-0 {
+  animation: 0.5s 0s linear fade-menu both;
+}
+
+.animate-delay-1 {
+  animation: 0.5s 0.1s linear fade-menu both;
+}
+
+.animate-delay-2 {
+  animation: 0.5s 0.2s linear fade-menu both;
+}
+
+.animate-delay-3 {
+  animation: 0.5s 0.3s linear fade-menu both;
+}
+
+.animate-delay-4 {
+  animation: 0.5s 0.4s linear fade-menu both;
+}
+
+.animate-delay-5 {
+  animation: 0.5s 0.5s linear fade-menu both;
+}
+
+.animate-delay-6 {
+  animation: 0.5s 0.6s linear fade-menu both;
+}
+
+.animate-delay-7 {
+  animation: 0.5s 0.7s linear fade-menu both;
+}
+
+.animate-delay-8 {
+  animation: 0.5s 0.8s linear fade-menu both;
+}
+
+/* Fading and translate for cards of meal */
+@keyframes fade-menu {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  25% {
+    opacity: 0.5;
+    transform: translateY(6px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Rotate check icon on cards of meal */
 @keyframes rotate-check {
   from {
     transform: rotate(90deg);

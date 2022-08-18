@@ -72,6 +72,8 @@
     border-radius: 12px;
     cursor: pointer;
     overflow: hidden;
+    transform: translateY(10px);
+    opacity: 0;
     &__body {
       padding: 12px;
       width: 100%;
@@ -137,3 +139,4 @@
     }
   }
 }
+
