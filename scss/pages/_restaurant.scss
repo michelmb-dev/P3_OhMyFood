@@ -140,3 +140,9 @@
   }
 }
 
+/* Animate with delay all cards of meal */
+@for $i from 0 to 9 {
+  .animate-delay-#{$i} {
+    animation: 0.5s #{calc($i / 10)}s linear fade-menu both;
+  }
+}
