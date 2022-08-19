@@ -99,11 +99,11 @@ button {
   font-size: 28px;
   margin: 0;
   padding: 20px 0 10px;
-  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 }
 .header__location {
   display: inline-block;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.2);
   padding: 15px;
   width: 100%;
   font-weight: 700;
@@ -170,7 +170,7 @@ button {
   border: none;
   border-radius: 26px;
   height: 52px;
-  box-shadow: 0 5px 15px rgba(3, 3, 3, 0.1);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   transition: opacity 350ms;
   margin-left: auto;
   margin-right: auto;
@@ -198,7 +198,7 @@ button {
   border-radius: 20px;
   width: 100%;
   height: 72px;
-  box-shadow: 0 8px 10px rgba(3, 3, 3, 0.1);
+  box-shadow: 0 5px 10px 1px rgba(128, 128, 128, 0.2);
   padding-right: 10px;
   transition: background-color 350ms;
 }
@@ -228,7 +228,7 @@ button {
 .functioning__btn__icon {
   margin: 0 10px 0 15px;
   font-size: 18px;
-  color: rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.2);
   transition: color 350ms;
 }
 .functioning__btn:hover {
@@ -254,9 +254,10 @@ button {
 }
 .restaurants__card {
   position: relative;
-  box-shadow: 0 8px 10px rgba(3, 3, 3, 0.1);
+  box-shadow: 0 5px 10px rgba(128, 128, 128, 0.2);
   border-radius: 15px;
   overflow: hidden;
+  transition: box-shadow 350ms;
 }
 .restaurants__card__new {
   position: absolute;
@@ -309,13 +310,16 @@ button {
 .restaurants__card__footer__heart:hover :nth-child(2) {
   opacity: 1;
 }
+.restaurants__card:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
 
 .main {
   background: rgb(246, 246, 246);
   border-radius: 40px 40px 0 0;
   padding-bottom: 15px;
   margin-top: 230px;
-  box-shadow: 0 5px 5px 5px rgba(3, 3, 3, 0.1);
+  box-shadow: 0 5px 5px 5px rgba(128, 128, 128, 0.2);
 }
 .main__title {
   display: flex;
@@ -332,7 +336,7 @@ button {
   border: none;
   border-radius: 26px;
   height: 52px;
-  box-shadow: 0 5px 15px rgba(3, 3, 3, 0.1);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   transition: opacity 350ms;
   display: flex;
   align-items: center;
@@ -418,7 +422,7 @@ button {
   display: flex;
   align-items: center;
   width: 100%;
-  box-shadow: 0 5px 5px 5px rgba(3, 3, 3, 0.1);
+  box-shadow: 0 5px 10px rgba(128, 128, 128, 0.2);
   border-radius: 12px;
   cursor: pointer;
   overflow: hidden;

@@ -46,7 +46,7 @@
     border-radius: 20px;
     width: 100%;
     height: 72px;
-    box-shadow: 0 8px 10px $color-grey-light;
+    box-shadow: 0 5px 10px 1px $color-grey-light;
     padding-right: 10px;
     transition: background-color 350ms;
     @include responsive-desktop {
@@ -99,9 +99,10 @@
 
   &__card {
     position: relative;
-    box-shadow: 0 8px 10px $color-grey-light;
+    box-shadow: 0 5px 10px $color-grey-light;
     border-radius: 15px;
     overflow: hidden;
+    transition: box-shadow 350ms;
     &__new {
       position: absolute;
       top: 15px;
@@ -132,6 +133,9 @@
       &__heart {
         @include heart-link;
       }
+    }
+    &:hover {
+      box-shadow: 0 5px 10px $color-grey;
     }
   }
 }
