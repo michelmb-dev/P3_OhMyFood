@@ -16,7 +16,6 @@
 @mixin heart-link {
   margin-right: 10px;
   position: relative;
-  clip-path: url('#heart');
   &--stroke {
     opacity: 1;
     transition: opacity 650ms;
