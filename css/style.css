@@ -289,6 +289,7 @@ button {
 .restaurants__card__footer__heart {
   margin-right: 10px;
   position: relative;
+  cursor: pointer;
 }
 .restaurants__card__footer__heart--stroke {
   opacity: 1;
@@ -357,6 +358,7 @@ button {
 .main__heart {
   margin-right: 10px;
   position: relative;
+  cursor: pointer;
 }
 .main__heart--stroke {
   opacity: 1;
