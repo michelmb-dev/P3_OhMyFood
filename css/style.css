@@ -52,13 +52,13 @@ button {
   justify-content: center;
   align-items: center;
   opacity: 1;
-  animation: 3s fade-out-loader ease-out forwards;
+  animation: 3s 0.5s fade-out-loader ease-out forwards;
 }
 .loader__spinner {
   position: relative;
   width: 60px;
   height: 60px;
-  animation: 1.5s rotate-spinner ease-out forwards;
+  animation: 2s rotate-spinner ease-out forwards;
   opacity: 1;
 }
 .loader__spinner__br-1 {
@@ -269,7 +269,7 @@ button {
   border-radius: 2px;
   padding: 6px 12px;
 }
-.restaurants__card img {
+.restaurants__card > img {
   object-fit: cover;
   object-position: center 62%;
   max-height: 180px;
@@ -278,37 +278,40 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px;
+  margin: 15px;
   flex-grow: 1;
+  overflow: hidden;
 }
 .restaurants__card__footer p {
   font-weight: 300;
   padding-top: 5px;
 }
 .restaurants__card__footer__heart {
-  position: relative;
   margin-right: 10px;
+  position: relative;
+  clip-path: url("#heart");
 }
 .restaurants__card__footer__heart--stroke {
+  opacity: 1;
+  transition: opacity 650ms;
   width: 28px;
   height: 28px;
-  opacity: 1;
-  transition: opacity 250ms;
 }
 .restaurants__card__footer__heart--fill {
-  width: 30px;
-  height: 30px;
-  top: -1px;
-  right: -1px;
+  width: 28px;
+  height: 0;
+  left: 0;
+  bottom: 0;
   position: absolute;
   opacity: 0;
-  transition: opacity 250ms;
+  transition: all 350ms;
 }
 .restaurants__card__footer__heart:hover :nth-child(1) {
-  opacity: 0;
+  animation: fadeHeart 250ms 200ms both;
 }
 .restaurants__card__footer__heart:hover :nth-child(2) {
   opacity: 1;
+  height: 28px;
 }
 .restaurants__card:hover {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -353,29 +356,31 @@ button {
   }
 }
 .main__heart {
-  position: relative;
   margin-right: 10px;
+  position: relative;
+  clip-path: url("#heart");
 }
 .main__heart--stroke {
+  opacity: 1;
+  transition: opacity 650ms;
   width: 28px;
   height: 28px;
-  opacity: 1;
-  transition: opacity 250ms;
 }
 .main__heart--fill {
-  width: 30px;
-  height: 30px;
-  top: -1px;
-  right: -1px;
+  width: 28px;
+  height: 0;
+  left: 0;
+  bottom: 0;
   position: absolute;
   opacity: 0;
-  transition: opacity 250ms;
+  transition: all 350ms;
 }
 .main__heart:hover :nth-child(1) {
-  opacity: 0;
+  animation: fadeHeart 250ms 200ms both;
 }
 .main__heart:hover :nth-child(2) {
   opacity: 1;
+  height: 28px;
 }
 
 .cover {
@@ -527,6 +532,10 @@ button {
   animation: 0.5s 0.8s linear fade-menu both;
 }
 
+.animate-delay-9 {
+  animation: 0.5s 0.9s linear fade-menu both;
+}
+
 /* Animations */
 /* Fade out loader */
 @keyframes fade-out-loader {
@@ -576,5 +585,14 @@ button {
   }
   to {
     transform: rotate(1turn);
+  }
+}
+/* Fading Stroke heart on hover */
+@keyframes fadeHeart {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
   }
 }
