@@ -8,12 +8,12 @@
   justify-content: center;
   align-items: center;
   opacity: 1;
-  animation: 3s fade-out-loader ease-out forwards;
+  animation: 3s .5s fade-out-loader ease-out forwards;
   &__spinner {
     position: relative;
     width: 60px;
     height: 60px;
-    animation: 1.5s rotate-spinner ease-out forwards;
+    animation: 2s rotate-spinner ease-out forwards;
     opacity: 1;
     &__br-1 {
       position: absolute;
