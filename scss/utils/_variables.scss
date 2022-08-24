@@ -2,7 +2,9 @@ $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
 
-$color-bg: rgb(246, 246, 246);
+$color-bg-grey: rgb(246, 246, 246);
+$color-bg-white: #FFFFFF;
+
 $color-grey-dark: rgba(0, 0, 0, 0.5);
 $color-grey: rgba(0, 0, 0, 0.2);
 $color-grey-light: lighten($color-grey, 50%);

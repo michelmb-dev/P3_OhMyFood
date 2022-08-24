@@ -5,6 +5,7 @@
 }
 
 .landing {
+  background: $color-bg-grey;
   padding: 50px 15px;
   display: flex;
   flex-direction: column;
@@ -12,6 +13,9 @@
   align-items: center;
   gap: 18px;
   text-align: center;
+  @include responsive-desktop {
+    background: $color-bg-white;
+  }
   &__title {
     padding: 0 40px;
   }
@@ -46,7 +50,7 @@
     border-radius: 20px;
     width: 100%;
     height: 72px;
-    box-shadow: 0 5px 10px 1px $color-grey-light;
+    box-shadow: 0 5px 20px 3px $color-grey-light;
     padding-right: 10px;
     transition: background-color 350ms;
     @include responsive-desktop {
@@ -86,7 +90,11 @@
 }
 
 .restaurants {
+  background: $color-bg-grey;
   padding: 60px 20px 60px;
+  @include responsive-desktop {
+    background: $color-bg-white;
+  }
   &__wrapper {
     margin-top: 24px;
     display: grid;
@@ -99,6 +107,7 @@
 
   &__card {
     position: relative;
+    background: $color-bg-white;
     box-shadow: 0 5px 10px $color-grey-light;
     border-radius: 15px;
     overflow: hidden;
@@ -132,6 +141,7 @@
       };
       &__heart {
         @include heart-link;
+        margin-bottom: 10px;
       }
     }
     &:hover {
