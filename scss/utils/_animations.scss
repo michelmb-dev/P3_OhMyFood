@@ -16,9 +16,10 @@
 @keyframes rotate-spinner {
   0% {
     transform: rotate(0);
+    opacity: 1;
   }
   60% {
-    opacity: 0;
+    opacity: 1;
   }
   100% {
     transform: rotate(2turn);
