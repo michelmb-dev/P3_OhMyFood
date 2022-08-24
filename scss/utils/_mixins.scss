@@ -7,9 +7,10 @@
   border-radius: 26px;
   height: 52px;
   box-shadow: 0 5px 10px $color-grey;
-  transition: opacity 350ms;
+  transition: all 350ms;
   &:hover {
     opacity: 0.8;
+    box-shadow: 0 5px 10px $color-grey-dark;
   }
 }
 

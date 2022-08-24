@@ -171,12 +171,13 @@ button {
   border-radius: 26px;
   height: 52px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  transition: opacity 350ms;
+  transition: all 350ms;
   margin-left: auto;
   margin-right: auto;
 }
 .landing__btn:hover {
   opacity: 0.8;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .functioning {
@@ -340,7 +341,7 @@ button {
   border-radius: 26px;
   height: 52px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  transition: opacity 350ms;
+  transition: all 350ms;
   display: flex;
   align-items: center;
   margin-top: 50px;
@@ -348,6 +349,7 @@ button {
 }
 .main__btn:hover {
   opacity: 0.8;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 @media screen and (min-width: 992px) {
   .main__btn {
